@@ -5,8 +5,8 @@ on:
   - pull_request
   - workflow_dispatch
 jobs:
-  build-api:
-    name: Build API
+  build:
+    name: Build
     runs-on: ubuntu-latest
     env:
       DOTNET_NOLOGO: true
