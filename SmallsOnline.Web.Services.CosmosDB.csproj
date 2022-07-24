@@ -11,7 +11,7 @@
     <Authors>Timothy Small</Authors>
     <Company>Smalls.Online</Company>
     <RepositoryUrl>https://github.com/Smalls1652/SmallsOnline.Web.Services.CosmosDB</RepositoryUrl>
-    <VersionPrefix>2022.05.07</VersionPrefix>
+    <VersionPrefix>2022.05.08</VersionPrefix>
     <Description>
       The public facing API for https://smalls.online.
     </Description>
