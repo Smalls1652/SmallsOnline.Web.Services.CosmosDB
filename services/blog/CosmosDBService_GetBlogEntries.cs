@@ -29,7 +29,7 @@ public partial class CosmosDbService : ICosmosDbService
         Container container = cosmosDbClient.GetContainer(_containerName, "blogs");
 
         // Build the Cosmos DB SQL query.
-        QueryDefinition query = new($"SELECT c.id, c.partitionKey, c.blogTitle, c.blogPostedDate, c.blogContent, c.blogTags, c.blogIsPublished FROM c WHERE c.partitionKey = \"blog-entry\" AND c.blogIsPublished = true ORDER BY c.blogPostedDate DESC OFFSET {offsetNum} LIMIT 5");
+        QueryDefinition query = new($"SELECT c.id, c.partitionKey, c.blogUrlId, c.blogTitle, c.blogPostedDate, c.blogContent, c.blogTags, c.blogIsPublished FROM c WHERE c.partitionKey = \"blog-entry\" AND c.blogIsPublished = true ORDER BY c.blogPostedDate DESC OFFSET {offsetNum} LIMIT 5");
 
         // Execute the Cosmos DB SQL query and get the results.
         FeedIterator<BlogEntry> containerQueryIterator = container.GetItemQueryIterator<BlogEntry>(query);
