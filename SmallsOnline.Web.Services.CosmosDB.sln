@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallsOnline.Web.Services.CosmosDB", "SmallsOnline.Web.Services.CosmosDB.csproj", "{A2B8CE78-A86B-45AA-954B-9690FE5AE783}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallsOnline.Web.Services.CosmosDB", "src\SmallsOnline.Web.Services.CosmosDB\SmallsOnline.Web.Services.CosmosDB.csproj", "{F66A251B-562C-4A7A-BC22-9EEF69BAD890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallsOnline.Web.Lib", "src\SmallsOnline.Web.Lib\src\SmallsOnline.Web.Lib\SmallsOnline.Web.Lib.csproj", "{A01A14D5-70F7-4320-A460-C91DA4E697A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A2B8CE78-A86B-45AA-954B-9690FE5AE783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2B8CE78-A86B-45AA-954B-9690FE5AE783}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2B8CE78-A86B-45AA-954B-9690FE5AE783}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2B8CE78-A86B-45AA-954B-9690FE5AE783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F66A251B-562C-4A7A-BC22-9EEF69BAD890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66A251B-562C-4A7A-BC22-9EEF69BAD890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66A251B-562C-4A7A-BC22-9EEF69BAD890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66A251B-562C-4A7A-BC22-9EEF69BAD890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A01A14D5-70F7-4320-A460-C91DA4E697A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A01A14D5-70F7-4320-A460-C91DA4E697A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A01A14D5-70F7-4320-A460-C91DA4E697A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A01A14D5-70F7-4320-A460-C91DA4E697A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
