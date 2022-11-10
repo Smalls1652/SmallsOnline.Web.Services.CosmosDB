@@ -10,10 +10,10 @@ public partial class CosmosDbService : ICosmosDbService
     /// </summary>
     /// <param name="listYear">The list year to get the data for.</param>
     /// <returns>A collection of favorite tracks for a year</returns>
-    public async Task<List<TrackData>> GetFavoriteTracksOfYearAsync(string listYear)
+    public async Task<List<SongData>> GetFavoriteSongsOfYearAsync(string listYear)
     {
         // Create a list to hold the track items.
-        List<TrackData> trackItems = new();
+        List<SongData> trackItems = new();
 
         // Get the container where the favorite music entries are stored.
         Container container = cosmosDbClient.GetContainer(_containerName, "favorites-of");
@@ -22,10 +22,10 @@ public partial class CosmosDbService : ICosmosDbService
         QueryDefinition query = new($"SELECT * FROM c WHERE c.partitionKey = \"favorites-of-tracks\" AND c.listYear = \"{listYear}\"");
 
         // Execute the query.
-        FeedIterator<TrackData> containerQueryIterator = container.GetItemQueryIterator<TrackData>(query);
+        FeedIterator<SongData> containerQueryIterator = container.GetItemQueryIterator<SongData>(query);
         while (containerQueryIterator.HasMoreResults)
         {
-            foreach (TrackData item in await containerQueryIterator.ReadNextAsync())
+            foreach (SongData item in await containerQueryIterator.ReadNextAsync())
             {
                 // Add the track to the list.
                 trackItems.Add(item);

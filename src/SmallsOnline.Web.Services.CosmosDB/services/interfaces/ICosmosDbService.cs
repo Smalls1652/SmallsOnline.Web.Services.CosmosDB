@@ -8,5 +8,5 @@ public interface ICosmosDbService
     Task<int> GetBlogTotalPagesAsync();
 
     Task<List<AlbumData>> GetFavoriteAlbumsOfYearAsync(string listYear);
-    Task<List<TrackData>> GetFavoriteTracksOfYearAsync(string listYear);
+    Task<List<SongData>> GetFavoriteSongsOfYearAsync(string listYear);
 }
