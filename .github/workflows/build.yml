@@ -17,12 +17,9 @@ jobs:
           submodules: true
 
       - name: Setup dotnet SDK
-        uses: actions/setup-dotnet@v1.9.0
+        uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.x'
-
-      - name: Setup GitHub Packages source
-        run: dotnet nuget add source https://nuget.pkg.github.com/Smalls1652/index.json --name github --username Smalls1652 --password ${{ secrets.PACKAGES_TOKEN }} --store-password-in-clear-text
+          dotnet-version: '7.0.x'
 
       - name: Run 'dotnet restore'
         run: dotnet restore
