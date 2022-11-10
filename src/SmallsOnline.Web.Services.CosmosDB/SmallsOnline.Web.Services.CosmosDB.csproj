@@ -19,9 +19,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.31.1" />
-    <PackageReference Include="SmallsOnline.Web.Lib" Version="2022.6.6">
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
   </ItemGroup>
 
 </Project>
